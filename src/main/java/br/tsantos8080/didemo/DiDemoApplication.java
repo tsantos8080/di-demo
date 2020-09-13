@@ -14,7 +14,7 @@ public class DiDemoApplication {
     public static void main(String[] args) {
         ApplicationContext ctx = SpringApplication.run(DiDemoApplication.class, args);
         MyController myController = (MyController) ctx.getBean("myController");
-        myController.hello();
+        System.out.println(myController.hello());
         System.out.println("Constructor injection: " + ctx.getBean(ConstructorInjectedController.class).sayHello());
         System.out.println("Setter injection: " + ctx.getBean(SetterInjectedController.class).sayHello());
         System.out.println("Property injection: " + ctx.getBean(PropertyInjectedController.class).sayHello());
