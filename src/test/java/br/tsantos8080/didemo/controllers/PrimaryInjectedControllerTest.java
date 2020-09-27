@@ -11,7 +11,7 @@ public class PrimaryInjectedControllerTest {
 
     @BeforeEach
     public void setUp() {
-        this.primaryGreetingService = new PrimaryGreetingService();
+//        this.primaryGreetingService = new PrimaryGreetingService();
     }
 
     @Test
